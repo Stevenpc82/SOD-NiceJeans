@@ -18,6 +18,10 @@ Algoritmo EjerciciosDeAlgoritmia
 	opcio<-"s";
 	Mientras opcio = "s" Hacer
 		Limpiar Pantalla;
+		Escribir "A continuacion se le mostrara un menu en el cual debera elegir una opcion numerica";
+		Escribir "posteriormente se ejecutara el programa solicitado";
+		Escribir "IMPORTANTE: Por favor lea todos los comentarios/preguntas mostrados en la ejecucion del programa para su correcta funcionalidad";
+		Escribir "  ";
 		Escribir "          Ejercicios de algoritmia       ";
 		Escribir "1. Secuenciales";
 		Escribir "2. Condicionales Simples";
@@ -28,17 +32,18 @@ Algoritmo EjerciciosDeAlgoritmia
 		Escribir "7. Ciclo: Para";
 		Escribir "8. Arreglos";
 		Escribir "9. Matriz";
-		Escribir "10. Salir";
 		Leer a;
 		Segun a Hacer
 			1:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a1;
 					
 					Segun a1 Hacer
@@ -64,11 +69,13 @@ Algoritmo EjerciciosDeAlgoritmia
 			2:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a2;
 					Segun a2 Hacer
 						1:
@@ -91,11 +98,13 @@ Algoritmo EjerciciosDeAlgoritmia
 			3:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a3;
 					Segun a3 Hacer
 						1:
@@ -118,11 +127,13 @@ Algoritmo EjerciciosDeAlgoritmia
 			4:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a4;
 					Segun a4 Hacer
 						1:
@@ -145,11 +156,13 @@ Algoritmo EjerciciosDeAlgoritmia
 			5:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a5;
 					Segun a5 Hacer
 						1:
@@ -172,11 +185,13 @@ Algoritmo EjerciciosDeAlgoritmia
 			6:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a6;
 					Segun a6 Hacer
 						1:
@@ -199,11 +214,13 @@ Algoritmo EjerciciosDeAlgoritmia
 			7:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a7;
 					Segun a7 Hacer
 						1:
@@ -226,11 +243,13 @@ Algoritmo EjerciciosDeAlgoritmia
 			8:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a8;
 					Segun a8 Hacer
 						1:
@@ -253,11 +272,13 @@ Algoritmo EjerciciosDeAlgoritmia
 			9:
 				Mientras opcio = "s" hacer
 					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
+					Escribir "Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)";
+					Escribir " ";
+					Escribir "1.Nombre de ejecicio (Eimy Osorio - 1006007393)";
+					Escribir "2.Nombre de ejecicio (Darly Olave - 1001344135)";
+					Escribir "3.Nombre de ejecicio (Deisy Mendieta - 1032369465)";
+					Escribir "4.Nombre de ejecicio (Cesar Vidales - 1003259533)";
+					Escribir "5.Nombre de ejecicio (Stiven Pineda - 1073717022)";
 					leer a9;
 					Segun a9 Hacer
 						1:
@@ -277,37 +298,17 @@ Algoritmo EjerciciosDeAlgoritmia
 					leer opcio;
 					opcior<-Minusculas(opcio);
 				FinMientras
-			10:	
-				Mientras opcio = "s" hacer
-					Limpiar Pantalla;
-					Escribir "1.Nombre de ejecicio (Eimy Osorio #documento)";
-					Escribir "2.Nombre de ejecicio (Darly Olave #documento)";
-					Escribir "3.Nombre de ejecicio (Deisy Mendieta #documento)";
-					Escribir "4.Nombre de ejecicio (Cesar Vidales #documento)";
-					Escribir "5.Nombre de ejecicio (Stiven Pineda #documento)";
-					leer a10;
-					Segun a10 Hacer
-						1:
-							Escribir "Codificacion en progreso";
-						2:
-							Escribir "Codificacion en progreso";
-						3:
-							Escribir "Codificacion en progreso";
-						4:
-							Escribir "Codificacion en progreso";
-						5:	
-							Escribir "Codificacion en progreso";
-						De Otro Modo:
-							Escribir "Seleccion no valida";
-					Fin Segun
-					Escribir"¿Desea ver el trabajo de otro aprendiz? (s/n)";
-					leer opcio;
-					opcior<-Minusculas(opcio);
-				FinMientras
+			De Otro Modo:
+				Escribir "Seleccion no valida";
 		Fin Segun
 		Escribir"¿Desea ver el otro tema? (s/n)";
 		leer opcio;
 		opcio<-Minusculas(opcio);
 	Fin Mientras
-	
+	Limpiar Pantalla;
+	Escribir " ";
+	Escribir "Gracias por la atencion prestada";
+	Escribir "       Cordialmente";
+	Escribir "          2DECS";
+	Escribir " ";
 FinAlgoritmo
