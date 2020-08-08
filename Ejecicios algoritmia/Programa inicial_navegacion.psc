@@ -1,6 +1,20 @@
 Algoritmo EjerciciosDeAlgoritmia
 	Definir opcio Como Caracter;
 	Definir a, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10 Como Entero;
+	opcio<-"n";
+	Mientras opcio = "n" Hacer
+		Escribir "Bienvenido al menu de unificación de ejercicios de algoritmia";
+		Escribir "             ADSI - 2067469";
+		Escribir "                 GRUPO 2";
+		Escribir "  ";
+		Escribir"Deseamos que todas las dudas queden claras antes de iniciar la ejecución del programa";
+		Escribir "  ";
+		Escribir"¿Desea continuar? (s/n)";
+		leer opcio;
+		opcio<-Minusculas(opcio);
+		Limpiar Pantalla;
+	FinMientras
+	Limpiar Pantalla;
 	opcio<-"s";
 	Mientras opcio = "s" Hacer
 		Limpiar Pantalla;
