@@ -1,6 +1,48 @@
+
+Funcion end <- FunsionEimy ( nom )
+	cantidadDivisores<-0;
+	Para contP<-1 Hasta nom Hacer
+		Si nom % contP = 0 Entonces
+			cantidadDivisores<-cantidadDivisores+1;
+		Fin Si
+	Fin Para
+	Si cantidadDivisores<=2 Entonces
+		end<-Verdadero;
+	SiNo
+		end<-Falso;
+	Fin Si
+Fin Funcion
+
+Funcion xx <- practicas ( yyC, mm  )
+	xyz <- 0;
+	Para i<-1 Hasta mm Hacer
+		xyz <- xyz + yyC[i];
+	FinPara
+	xx<- xyz/mm;
+FinFuncion
+
+Funcion  stivenFun (  SnA, SnB  )
+	Asum<-snA+SnB;
+	Ares<-snA-SnB;
+	Amul<-snA*SnB;
+	Adiv<-snA/SnB;
+	AraA<-rc(snA);
+	AraB<-rc(snB);
+	AraAA<-snA^(1/3);
+	AraBB<-snB^(1/3);
+	Escribir snA,"+",snB,"=",Asum;
+	Escribir snA,"-",snB,"=",Ares;
+	Escribir snA,"*",snB,"=",Amul;
+	Escribir snA,"/",snB,"=",Adiv;
+	Escribir "Raiz cuadrada de ",SnA,":",AraA;
+	Escribir "Raiz cuadrada de ",SnB,":",AraB;
+	Escribir "Raiz Cubica de ",SnA,":",AraAA;
+	Escribir "Raiz Cubica de ",SnB,":",AraBB;
+FinFuncion
+
 Algoritmo EjerciciosDeAlgoritmia
 	Definir opcio Como Caracter;
-	Definir a,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10 Como Entero;
+	Definir a,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11 Como Entero;
 	opcio <- 'n';
 	Mientras opcio='n' Hacer
 		Escribir 'Bienvenido al menu de unificación de ejercicios de algoritmia';
@@ -32,6 +74,7 @@ Algoritmo EjerciciosDeAlgoritmia
 		Escribir '7. Ciclo: Para';
 		Escribir '8. Arreglos';
 		Escribir '9. Matriz';
+		Escribir '10. Funciones';
 		Leer a;
 		Segun a  Hacer
 			1:
@@ -39,8 +82,10 @@ Algoritmo EjerciciosDeAlgoritmia
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
+					Escribir 'Menu Secuenciales';
+					Escribir ' ';
 					Escribir '1.Euros a centimos (Eimy Osorio - 1006007393)';
-					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
+					Escribir '2.Resultado Nota Final (Darly Olave - 1001344135)';
 					Escribir '3.Hora de llegada a la ciudad B (Deisy Mendieta - 1032369465)';
 					Escribir '4.Intercambio de valores (Cesar Vidales - 1003259533)';
 					Escribir '5.Raiz cuadrada y cubica (Stiven Pineda - 1073717022)';
@@ -66,7 +111,28 @@ Algoritmo EjerciciosDeAlgoritmia
 							Escribir  total_euros, " euros y ", total_centimos, " céntimos";
 							Escribir '  ';
 						2:
-							Escribir 'Codificacion en progreso ';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Escribir "------RESULTADO DE SU NOTA FINAL-------";
+							Escribir  " ";
+							Escribir  "ingrese el total de las preguntas del examen";
+							leer tot;
+							Escribir "¿cuantas respuestas correctas obtuvo?";
+							leer Rco;
+							RcoD<-Rco*5;
+							Escribir "¿cuantas respuestas incorrectas obtuvo?";
+							leer Rin;
+							RinD<-Rin-1;
+							Escribir "¿cuantas respuestas en blanco dejo?";
+							leer Rbl;
+							Escribir  "La suma de su nota final es:";
+							nf<- (RcoD+RinD) /tot;
+							Escribir "El total de las preguntas del examen es:",tot;
+							Escribir "El total de las respuestas correctas es:",Rco;
+							Escribir "El total de las respuestas incorrectas es:",Rin;
+							Escribir  "El total de las respuestas en blanco es:",Rbl;
+							Escribir  "Por lo tanto su nota final es de:",nf;
+							Escribir '  ';
 						3:
 							Escribir '    Bienvenido   ';
 							Escribir '  ';
@@ -119,13 +185,16 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer opcio;
 					opcior <- Minusculas(opcio);
 				FinMientras
+				
 			2:
 				Mientras opcio='s' Hacer
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
+					Escribir 'Menu Condicional Simple';
+					Escribir ' ';
 					Escribir '1.Calificaciones (Eimy Osorio - 1006007393)';
-					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
+					Escribir '2.Edad con mensaje (Darly Olave - 1001344135)';
 					Escribir '3.Calcular inversion mayor a 7000 (Deisy Mendieta - 1032369465)';
 					Escribir '4.Aprobar o reprobar alumno (Cesar Vidales - 1003259533)';
 					Escribir '5.En un almacén se hace un 20% de descuento a los clientes cuya compra supere los $1000 (Stiven Pineda - 1073717022)';
@@ -141,7 +210,14 @@ Algoritmo EjerciciosDeAlgoritmia
 							Fin Si
 							Escribir '  ';
 						2:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Escribir "¿Cuál es tu edad?";
+							leer edadDa;
+							Si edadDa >= 18 entonces
+								Escribir "Eres mayor de ",edadDa;
+							Fin si
+							Escribir '  ';
 						3:
 							Escribir '    Bienvenido   ';
 							Escribir '  ';
@@ -184,23 +260,54 @@ Algoritmo EjerciciosDeAlgoritmia
 					Escribir '¿Desea ver el trabajo de otro aprendiz? (s/n)';
 					Leer opcio;
 					opcior <- Minusculas(opcio);
+					
 				FinMientras
+				
 			3:
 				Mientras opcio='s' Hacer
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
-					Escribir '1.Nombre de ejecicio (Eimy Osorio - 1006007393)';
-					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
+					Escribir 'Menu Condicional compuesto';
+					Escribir ' ';
+					Escribir '1.Mayor y menor edad (Eimy Osorio - 1006007393)';
+					Escribir '2.Precio llantas (Darly Olave - 1001344135)';
 					Escribir '3.Descuentos (Deisy Mendieta - 1032369465)';
 					Escribir '4.Jubilacion de trabajo (Cesar Vidales - 1003259533)';
 					Escribir '5.10% mayores a 20000 y 5% en marcas NOSY (Stiven Pineda - 1073717022)';
 					Leer a3;
 					Segun a3  Hacer
 						1:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Escribir "Ingrese el año actual";
+							Leer a_1;
+							Escribir "Ingrese el año de nacimiento";
+							Leer nacimiento;
+							fecha<-a_1-nacimiento;
+							Escribir "Su edad es ", fecha;
+							Si fecha>=18 Entonces
+								Escribir "Es mayor de edad";
+							SiNo
+								Escribir "Es menor de edad";
+							Fin Si
+							Escribir '  ';
 						2:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Escribir  "¿Ingrese la cantidad de llantas que desea comprar?";
+							leer cantidadDa;
+							Si cantidadDa  < 5 Entonces
+								unidadDa=30000;
+							fin si
+							Si (cantidadDa >= 5) y (cantidadDa < 10) Entonces
+								unidadDa=25000;
+							SiNo
+								unidadDa=20000;
+							fin si
+							totalDa=unidadDa*cantidadDa;
+							Escribir "El total a pagar es de : ",totalDa, " y el costo por unidad es de  ",unidadDa;
+							Escribir '  ';
 						3:
 							Escribir '    Bienvenido   ';
 							Escribir '  ';
@@ -276,13 +383,16 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer opcio;
 					opcior <- Minusculas(opcio);
 				FinMientras
+				
 			4:
 				Mientras opcio='s' Hacer
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
+					Escribir 'Menu Condicional Anidado';
+					Escribir ' ';
 					Escribir '1.Sueldo por horas trabajadas (Eimy Osorio - 1006007393)';
-					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
+					Escribir '2.Utilidad de un trabajador (Darly Olave - 1001344135)';
 					Escribir '3.Grado Eficiencia (Deisy Mendieta - 1032369465)';
 					Escribir '4.Descuento (Cesar Vidales - 1003259533)';
 					Escribir '5.Valor de R, dependiendo de x & y (Stiven Pineda - 1073717022)';
@@ -311,7 +421,33 @@ Algoritmo EjerciciosDeAlgoritmia
 							Escribir "El sueldo a recibir es ", tp;
 							Escribir '  ';
 						2:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							definir tiempo, utilidad, salario Como Real;
+							Escribir  "Su salario mensual";
+							leer salario;
+							Escribir  "¿	Cuantos años lleva en la empresa?";
+							leer tiempo;
+							Si tiempo>=1 Entonces
+								utilidad<-salario*0.05;
+							SiNo
+								Si (tiempo>=1) y (tiempo<2) Entonces
+									utilidad<-salario*0.07; 
+								SiNo
+									Si (tiempo>=2) y (tiempo<5) Entonces
+										utilidad<-salario*0.10;
+									SiNo
+										Si (tiempo>=5) y (tiempo<10) Entonces
+											utilidad<-salario*0.15;
+										SiNo
+											utilidad<-salario*0.20;
+										Fin Si
+									Fin Si
+								fin si
+							fin si
+							Escribir "Su utilidad es: ", utilidad;
+							
+							Escribir '  ';
 						3:
 							Escribir '    Bienvenido   ';
 							Escribir '  ';
@@ -393,13 +529,16 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer opcio;
 					opcior <- Minusculas(opcio);
 				FinMientras
+				
 			5:
 				Mientras opcio='s' Hacer
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
+					Escribir 'Menu Ciclo: Repetir Hasta';
+					Escribir ' ';
 					Escribir '1.Numeros de 1 a 100 (Eimy Osorio - 1006007393)';
-					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
+					Escribir '2.Suma de numeros positivos (Darly Olave - 1001344135)';
 					Escribir '3.Numero menor a 100 (Deisy Mendieta - 1032369465)';
 					Escribir '4.Código y contraseña (Cesar Vidales - 1003259533)';
 					Escribir '5.Suma de dos numeros hasta que a y b sean iguales a cero (Stiven Pineda - 1073717022)';
@@ -416,7 +555,16 @@ Algoritmo EjerciciosDeAlgoritmia
 							Hasta Que contadorE==100;
 							Escribir '  ';
 						2:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							contDor <- 0;
+							SuMaDa <- 0;
+							Repetir
+								contDor <- contDor + 1;
+								SuMaDa <- SuMaDa + contDor;
+							Hasta Que ( contDor == 5 )
+							Escribir "Resultado: ", SuMaDa;
+							Escribir '  ';
 						3:
 							Escribir '    Bienvenido   ';
 							Escribir '  ';
@@ -473,12 +621,15 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer opcio;
 					opcior <- Minusculas(opcio);
 				FinMientras
+				
 			6:
 				Mientras opcio='s' Hacer
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
-					Escribir '1.Nombre de ejecicio (Eimy Osorio - 1006007393)';
+					Escribir 'Menu Ciclo: Mientras ';
+					Escribir ' ';
+					Escribir '1.Factura de producto (Eimy Osorio - 1006007393)';
 					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
 					Escribir '3.Tabla de multiplicar (Deisy Mendieta - 1032369465)';
 					Escribir '4.Media de números positivos (Cesar Vidales - 1003259533)';
@@ -486,7 +637,30 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer a6;
 					Segun a6  Hacer
 						1:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Definir Resp Como Caracter;
+							totalglobal<-0;
+							Resp<-"Yes";
+							Mientras resp<> "Not" Hacer
+								Escribir "Ingrese nombre del cliente";
+								Leer name;
+								Escribir "Ingrese la cantidad del producto";
+								Leer catidad;
+								Escribir "Ingrese el precio del producto";
+								Leer pre;
+								st<-pre*catidad;
+								isv<-st*0.12;
+								tp<-st-isv;
+								totalglobal<-totalglobal+st;
+								Escribir "Subtotal ", st;
+								Escribir "Impuesto por venta ", isv;
+								Escribir "Total a pagar ", tp;
+								Escribir "¿Desea continuar? Yes/Not";
+								Leer resp;
+							Fin Mientras
+							Escribir "Total de la venta ", totalglobal;
+							Escribir '  ';
 						2:
 							Escribir 'Codificacion en progreso';
 						3:
@@ -535,12 +709,15 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer opcio;
 					opcior <- Minusculas(opcio);
 				FinMientras
+				
 			7:
 				Mientras opcio='s' Hacer
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
-					Escribir '1.Nombre de ejecicio (Eimy Osorio - 1006007393)';
+					Escribir 'Menu Ciclo: Para';
+					Escribir ' ';
+					Escribir '1.Sueldo Mayor (Eimy Osorio - 1006007393)';
 					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
 					Escribir '3.Calcule media de gastos  (Deisy Mendieta - 1032369465)';
 					Escribir '4.Suma de edades y promedio (Cesar Vidales - 1003259533)';
@@ -548,9 +725,47 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer a7;
 					Segun a7  Hacer
 						1:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							sueldomayor<-0;
+							Escribir "Ingrese cantidad de empleados";
+							Leer colaboradores;
+							Para i<-1 Hasta colaboradores Con Paso 1 Hacer
+								Escribir "Ingrese número del empleado";
+								Leer numerocolaborador;
+								Escribir "Ingrese el sueldo del empleado";
+								Leer sueldocolaborador;
+								Si sueldocolaborador>sueldomayor Entonces
+									sueldomayor<-sueldocolaborador;
+									numerodeempleadomayor<-numerocolaborador;
+								Fin Si
+							Fin Para
+							Escribir "El empleado con el número mayor es:";
+							Escribir "Numero: ", numerodeempleadomayor;
+							Escribir "Sueldo: ", sueldomayor;
+							Escribir '  ';
 						2:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Escribir  "digite el numero de personas";
+							leer numberone;
+							masq = 0
+							femeni = 0
+							
+							Para i<-1 Hasta numberone Con Paso 1 Hacer
+								Escribir  "Ingrese el sexo, 1 cuando sea masculino, 2 cuando sea femenino";
+								leer sexo;
+								Si sexo=1 Entonces
+									masq=masq+1;
+								SiNo
+									femeni=femeni+1;
+								Fin Si
+							Fin Para
+							femeni= (femeni*100)/numberone;
+							masq= (masq*100)/numberone;
+							Escribir "El porcentaje de hombres es ", masq; 
+							Escribir "El porcentaje de mujeres es ", femeni; 
+							Escribir '  ';
 						3:
 							Escribir '    Bienvenido   ';
 							Escribir '  ';
@@ -574,8 +789,8 @@ Algoritmo EjerciciosDeAlgoritmia
 							Leer cantidad_e;
 							Para i<-1 Hasta cantidad_e Hacer
 								Escribir 'edad de estudiantes';
-								Leer edad;
-								suma_de_edades <- suma_de_edades+edad;
+								Leer edadC;
+								suma_de_edades <- suma_de_edades+edadC;
 							FinPara
 							promedio_edades <- suma_de_edades/cantidad_e;
 							Escribir '----------------------------';
@@ -609,12 +824,15 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer opcio;
 					opcior <- Minusculas(opcio);
 				FinMientras
+				
 			8:
 				Mientras opcio='s' Hacer
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
-					Escribir '1.Nombre de ejecicio (Eimy Osorio - 1006007393)';
+					Escribir 'Menu Arreglos';
+					Escribir ' ';
+					Escribir '1.Gastos por plato  (Eimy Osorio - 1006007393)';
 					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
 					Escribir '3.Numeros positivos  (Deisy Mendieta - 1032369465)';
 					Escribir '4.Factorial de un numero (Cesar Vidales - 1003259533)';
@@ -622,7 +840,24 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer a8;
 					Segun a8  Hacer
 						1:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Escribir "Ingrese el nombre del plato : ";
+							Leer plato;
+							Escribir "Ingrese la cantidad de ingredientes";
+							Leer p;
+							Dimension productos[p];
+							Dimension precios[p];
+							gasto<-0;
+							Para j<-1 Hasta p Hacer
+								Escribir "Ingrese el nombre del " j " ingrediente " ;
+								Leer productos[j];
+								Escribir "Ingrese el precio del " j " ingrediente " ;
+								Leer precios[j];
+								gasto<-gasto+precios[j];
+							FinPara
+							Escribir "El costo a gastar es : " gasto;
+							Escribir '  ';
 						2:
 							Escribir 'Codificacion en progreso';
 						3:
@@ -694,20 +929,79 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer opcio;
 					opcior <- Minusculas(opcio);
 				FinMientras
+				
 			9:
 				Mientras opcio='s' Hacer
 					Borrar Pantalla;
 					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
 					Escribir ' ';
-					Escribir '1.Nombre de ejecicio (Eimy Osorio - 1006007393)';
+					Escribir 'Menu Matriz';
+					Escribir ' ';
+					Escribir '1.Multiplicación de matrices (Eimy Osorio - 1006007393)';
 					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
 					Escribir '3.Nombre de ejercicio (Deisy Mendieta - 1032369465)';
 					Escribir '4.Ventas de sucursales (Cesar Vidales - 1003259533)';
 					Escribir '5.Busqueda de datos en matriz (Stiven Pineda - 1073717022)';
-					Leer a9;
+					leer a9;
 					Segun a9  Hacer
 						1:
-							Escribir 'Codificacion en progreso';
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Dimension tab1[100,100];
+							Dimension tab2[100,100];
+							Dimension tab3[100,100];
+							Escribir "Digite el nE, mE , pE";
+							Leer nE,mE,pE;
+							Para i<-1 Hasta nE Con Paso 1 Hacer
+								Para j<-1 Hasta mE Con Paso 1 Hacer
+									tab1[i,j]<-azar(10);
+								Fin Para
+							Fin Para
+							Para i<-1 Hasta mE Con Paso 1 Hacer
+								Para j<-1 Hasta pE Con Paso 1 Hacer
+									tab2[i,j]<-azar(10);
+								Fin Para
+							Fin Para
+							Para i<-1 Hasta nE Con Paso 1 Hacer
+								Para j<-1 Hasta pE Con Paso 1 Hacer
+									tab3[i,j]<-0;
+								Fin Para
+							Fin Para
+							Escribir "";
+							Escribir "Primera Tabla";
+							Escribir "------------------------";
+							Para i<-1 Hasta nE Con Paso 1 Hacer
+								Para j<-1 Hasta mE Con Paso 1 Hacer
+									Escribir Sin Saltar tab1[i,j], "  "; 
+								Fin Para
+								Escribir "";
+							Fin Para
+							Escribir "";
+							Escribir "Segunda Tabla";
+							Escribir "------------------------";
+							Para i<-1 Hasta mE Con Paso 1 Hacer
+								Para j<-1 Hasta pE Con Paso 1 Hacer
+									Escribir Sin Saltar tab1[i,j], "  "; 
+								Fin Para
+								Escribir "";
+							Fin Para
+							Escribir "";
+							Escribir "Tabla Final";
+							Escribir "------------------------";
+							Para i<-1 Hasta nE Con Paso 1 Hacer
+								Para j<-1 Hasta pE Con Paso 1 Hacer
+									Para k<-1 Hasta mE Con Paso 1 Hacer
+										tab3[i,j]<-tab3[i,j]+(tab1[i,k]*tab2[k,j]);
+									Fin Para
+								Fin Para
+							Fin Para
+							Para i<-1 Hasta nE Con Paso 1 Hacer
+								Para j<-1 Hasta pE Con Paso 1 Hacer
+									Escribir Sin Saltar tab3[i,j], "  "; 
+								Fin Para
+								Escribir "";
+							Fin Para
+							Escribir '  ';
 						2:
 							Escribir 'Codificacion en progreso';
 						3:
@@ -820,15 +1114,73 @@ Algoritmo EjerciciosDeAlgoritmia
 					Leer opcio;
 					opcior <- Minusculas(opcio);
 				FinMientras
+				
+			10:	
+				Mientras opcio='s' Hacer
+					Borrar Pantalla;
+					Escribir 'Seleccione el ejercicio que desea ver (al lado derecho del nombre del ejercicio se podra observar el nombre del desarrollador)';
+					Escribir ' ';
+					Escribir 'Menu Funciones';
+					Escribir ' ';
+					Escribir '1.Primos del 1 al 30 (Eimy Osorio - 1006007393)';
+					Escribir '2.Nombre de ejecicio (Darly Olave - 1001344135)';
+					Escribir '3.Nombre de ejercicio (Deisy Mendieta - 1032369465)';
+					Escribir '4.Promedio N practicas (Cesar Vidales - 1003259533)';
+					Escribir '5.Operaciones de dos números (Stiven Pineda - 1073717022)';
+					leer a11;
+					Segun a11 hacer
+						1:
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Para n<-1 Hasta 30 Hacer
+								Si FunsionEimy(n) Entonces
+									Escribir n;
+								Fin Si
+							Fin Para
+							Escribir '  ';
+						2:
+							Escribir "Codificacion en progreso";
+						3:
+							Escribir "Codificacion en progreso";
+						4: 
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Dimension yy[6];
+							Escribir "Ingrese la cantidad de practicas:";
+							Leer ñl;
+							Para i<-1 Hasta ñl Hacer
+								Escribir "Ingrese la nota de la practica ",i,":";
+								Leer yy[i];
+							FinPara
+							Escribir "---------------------------";
+							Escribir "Su promedio es: ",practicas(yy,ñl);
+							Escribir '  ';
+						5:
+							Escribir '    Bienvenido   ';
+							Escribir '  ';
+							Escribir "Escriba un numero";
+							leer nusA;
+							Escribir "Escriba otro numero";
+							leer nusB;
+							Escribir "  ";
+							stivenFun(nusA,nusB);
+							Escribir '  ';
+						De Otro Modo:
+							Escribir "Seleccion no valida";
+					FinSegun
+					Escribir '¿Desea ver el trabajo de otro aprendiz? (s/n)';
+					Leer opcio;
+					opcior <- Minusculas(opcio);
+				FinMientras
 			De Otro Modo:
-				Escribir 'Seleccion no valida';
+				Escribir "Seleccion no valida";
 		FinSegun
 		Escribir '¿Desea ver el otro tema? (s/n)';
 		Leer opcio;
 		opcio <- Minusculas(opcio);
 	FinMientras
 	Borrar Pantalla;
-	Dimension mariposa[16];
+	Dimension mariposa[18];
 	mariposa[1] <- '                 ¶¶_    ¶¶ ';
 	mariposa[2] <- '     ¶¶¶¶¶¶       ¶¶   ¶¶ ';
 	mariposa[3] <- '    ¶¶¶¶¶¶¶¶¶      ¶  ¶ ';
@@ -845,7 +1197,9 @@ Algoritmo EjerciciosDeAlgoritmia
 	mariposa[14] <- ' ¶¶¶¶_ ¶¶¶      ¶¶¶ ¶¶¶¶ ';
 	mariposa[15] <- ' ¶¶¶¶¶¶¶¶        ¶¶¶¶¶¶¶¶¶ ';
 	mariposa[16] <- '  ¶¶¶¶¶            ¶¶¶¶¶¶ ';
-	Para i<-1 Hasta 16 Hacer
+	mariposa[17] <- '  ¶¶¶¶              ¶¶¶¶ ';
+	mariposa[18] <- '   ¶¶                ¶¶ ';
+	Para i<-1 Hasta 18 Hacer
 		Escribir mariposa[i];
 	FinPara
 	Escribir ' ';
